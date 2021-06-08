@@ -1,0 +1,30 @@
+#bag
+{
+  width: 250px;
+  height: 500px;
+  background: url(C:/Users/LENOVO/ani.jpg) center no-repeat;
+  background-size: 80%;
+  margin-left: 480px;
+  background-color: white;
+}
+#bag.burst
+{
+  background: url(C:/Users/LENOVO/ani2.jpg) center no-repeat;
+ background-size:80%;
+}
+#bag-health
+{
+width : 200px;    
+ border: 2px solid #000;
+ margin: 0 auto 20px auto;
+}
+#bag-health div
+{
+ height: 20px;
+ background: crimson;
+}
+#controls
+{
+  width: 120px;
+  margin: 0 auto;
+}
