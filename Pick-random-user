@@ -1,0 +1,31 @@
+<script src="https://unpkg.com/vue/dist/vue">  </script>
+<div id="app">
+<img v-bind:src="pict" alt="Not Available" style="border-radius:12px;margin-left:50px;">
+<h2> Full name:{{firstname}} {{lastname}} </h2>
+<h3>Email:{{email}}  </h3>
+<h3>Gender:{{gender}}  </h3>
+<button v-on:click="getuser()">Get Random User</button>
+</div>
+
+new Vue({
+el:"#app",
+data:
+{
+firstname:"Anil kumar",
+lastname:"Banothu",
+gender:"male",
+email:"banothuanilkumar98@gmail.com",
+pict:"https://randomuser.me/api/portraits/men/10.jpg"
+},
+methods:
+{
+getuser:function()
+{
+this.firstname="Kalpana";
+this.lastname="Banothu",
+this.gender="female",
+this.email="banothukalpana98@gmail.com",
+this.pict= "https://randomuser.me/api/portraits/women/10.jpg"
+}
+}
+});
