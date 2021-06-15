@@ -1,0 +1,73 @@
+//App.vue
+<template>
+<div class="container"> 
+  <Header title="hello Anil kumar"/>
+   </div>
+</template>
+<script>
+import Header from "./components/Header"
+export default 
+{
+  name: 'App',
+  components:
+  {
+    Header
+  },
+}
+</script> 
+<style>
+#app {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+//Header.vue
+<template>
+  <header>
+<h1>{{title}}  </h1>
+<Button text="Add Task" color="green"></Button>
+<Button text="Update" color="red"></Button>
+<Button text="Delete" color="blue"></Button>
+  </header>
+</template>
+<script>
+import Button from './Button'
+export default
+{
+name:"Header",
+props:['title'],
+components:
+{
+  Button
+}
+}
+</script>
+<style>
+</style>
+//Button.vue
+
+<template>
+  <div id="one">
+    <button :style="{background:color}" @click="call" class="btn">{{ text }}  </button>
+  </div>
+</template>
+<script>
+export default
+{
+name:"Button",
+props:
+{
+  text:String,
+  color:String
+},
+methods:
+{
+call() 
+{
+  console.log("click")
+}
+}
+}
+</script>
